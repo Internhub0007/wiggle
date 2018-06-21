@@ -1,0 +1,36 @@
+.row{
+    margin-left:0px !important;
+}
+
+.form-group {
+    padding-right:10px;
+}
+
+.my-group .form-control{
+    width:50%;
+}
+
+.join-inputs {
+    padding: 2px !important;
+    background-color: white !important;
+    border: 0px !important; 
+}
+
+.input-group-addon{
+    background-color: white !important;
+}
+
+.form-control-join-inputs {
+    border-radius: 4px !important;
+    width:40px !important;
+}
+
+
+.flight-rules-style{
+    width: 90px !important;
+}
+
+.flight-type-style{
+    width: 100px !important;
+}
+
