@@ -34,6 +34,7 @@
 									<th scope="col">Id</th>
 									<th scope="col">Course name</th>
 									<th scope="col">No of years</th>
+									<!-- <th scope="col">Modules</th> -->
 									<th scope="col">Actions</th>
 								</tr>
 							</thead>
@@ -43,9 +44,10 @@
 										<th>${c.count}</th>
 										<td>${v.id}</td>
 										<td>${v.courseName}</td>
+										<%-- <td>${v.modules}</td> --%>
 										<td>${v.years}</td>
-										<td><a href="vehicle_edit?id=${v.id}">Edit</a> <a
-											href="vehicle_delete?id=${v.id}">Delete</a></td>
+										<td><a href="course_edit?id=${v.id}">Edit</a> <a
+											href="course_delete?id=${v.id}">Delete</a></td>
 									</tr>
 								</c:forEach>
 						</table>

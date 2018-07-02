@@ -14,5 +14,11 @@ public interface StudentRepository {
 	
 	Students getStudentById(int id);
 	
+	Students getStudentByEmail(String email);
+	
 	List<Students> allStudents();
+	
+	boolean checkLogin(String email , String password);
+	
+	Students checkEmail(String email);
 }

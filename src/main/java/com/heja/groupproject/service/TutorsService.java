@@ -13,5 +13,11 @@ public interface TutorsService {
 	
 	Tutors getTutorById(int id);
 	
+	Tutors getTutorByEmail(String email);
+	
 	List<Tutors> allTutors();
+	
+	boolean checkLogin(String email, String password);
+	
+	Tutors checkEmail(String email);
 }

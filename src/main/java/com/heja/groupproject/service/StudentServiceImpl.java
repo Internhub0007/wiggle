@@ -37,8 +37,24 @@ public class StudentServiceImpl implements StudentService {
 	}
 
 	@Override
+	public Students getStudentByEmail(String email) {
+		return studentRepository.getStudentByEmail(email);
+	}
+
+	@Override
 	public List<Students> allStudents() {
+
 		return studentRepository.allStudents();
+	}
+
+	@Override
+	public boolean checkLogin(String email, String password) {
+		return studentRepository.checkLogin(email, password);
+	}
+
+	@Override
+	public Students checkEmail(String email) {
+		return studentRepository.checkEmail(email);
 	}
 
 }

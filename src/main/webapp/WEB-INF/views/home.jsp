@@ -6,6 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>home</title>
 <link rel = "stylesheet" href ="resources/css/home.css">
+
 </head>
 <body>
 	
@@ -14,15 +15,11 @@
 			
 			<img src="resources/Images/bc1.jpg" alt="" class="box-img">
 			
-			<ul><li><a href = "student_login">Student</a></li>/<li><a href = "tutor_login">Tutor</a></li></ul>
+			<ul><li><a href = "student_loginForm">Student</a></li>
+			<li><a href = "tutor_loginForm">Tutor</a></li></ul>
 			
-			<ul>
-				<li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-				<li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-				<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-			</ul>
 		</div>
 		
-	</body>
+	
 </body>
 </html>

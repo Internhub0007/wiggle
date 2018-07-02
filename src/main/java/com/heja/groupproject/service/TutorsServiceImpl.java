@@ -12,11 +12,10 @@ import com.heja.groupproject.repository.TutorsRepository;
 @Service
 @Transactional
 public class TutorsServiceImpl implements TutorsService {
-	
+
 	@Autowired
 	private TutorsRepository tutorsRepository;
-	
-	
+
 	@Override
 	public void addTutor(Tutors tutors) {
 		tutorsRepository.addTutor(tutors);
@@ -38,8 +37,24 @@ public class TutorsServiceImpl implements TutorsService {
 	}
 
 	@Override
+	public Tutors getTutorByEmail(String email) {
+		return tutorsRepository.getTutorByEmail(email);
+	}
+
+	@Override
 	public List<Tutors> allTutors() {
 		return tutorsRepository.allTutors();
 	}
+
+	@Override
+	public boolean checkLogin(String email, String password) {
+		return tutorsRepository.checkLogin(email, password);
+	}
+
+	@Override
+	public Tutors checkEmail(String email) {
+		return tutorsRepository.checkEmail(email);
+	}
+
 
 }

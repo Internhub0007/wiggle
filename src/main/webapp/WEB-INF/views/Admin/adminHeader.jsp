@@ -62,7 +62,7 @@
 						</div>
 						<!-- Logout    -->
 						<ul>
-							<a href="login.html" class="nav-link logout"> <span
+							<a href="logout" class="nav-link logout"> <span
 								class="d-none d-sm-inline">Logout</span><i
 								class="fa fa-sign-out"></i></a>
 						</ul>

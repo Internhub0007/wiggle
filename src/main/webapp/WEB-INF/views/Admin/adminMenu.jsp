@@ -16,17 +16,17 @@
 		<!-- Sidebar Navidation Menus-->
 		<span class="heading">Main</span>
 		<ul class="list-unstyled">
-			<li><a href="index.html"> <i
+			<li><a href="admin"> <i
 					class="icon-home"></i>Home
 			</a></li>
 			<li><a href="course_list"> <i class="icon-grid"></i>Courses
 			</a></li>
-			<li><a href="charts.html"> <i class="fa fa-bar-chart"></i>Modules
+			<li><a href="module_list"> <i class="fa fa-bar-chart"></i>Modules
 			</a></li>
-			<li><a href="forms.html"> <i class="icon-padnote"></i>Tutors
+			<li><a href="tutors_list"> <i class="icon-padnote"></i>Tutors
 			</a></li>
 			<li><a href="student_list"> <i class="icon-padnote"></i>Students
 			</a></li>
-			<li><a href="forms.html"> <i class="icon-padnote"></i>Time Table
+			<li><a href="class_list"> <i class="icon-padnote"></i>Class
 			</a></li>
 	</nav>

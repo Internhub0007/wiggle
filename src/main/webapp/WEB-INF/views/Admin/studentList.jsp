@@ -22,41 +22,53 @@
 		<section class="dashboard-header">
 		<div class="container-fluid">
 			<div class="row"></div>
+			<a href="student_form">Add Student</a>
 			<!-- Line Chart            -->
-			<div class="chart">
-				
-					<a href="student_form">Add Student</a>
-					<c:if test="${!empty students }">
-						<table class="table table-hover">
-							<thead>
+			<div class="bg-light ">
+
+
+				<c:if test="${!empty students }">
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th scope="col">SN</th>
+								<th scope="col">Roll no</th>
+								<th scope="col">Name</th>
+								<th scope="col">Email</th>
+								<th scope="col">D.O.B</th>
+								<th scope="col">Gender</th>
+								<th scope="col">Street</th>
+								<th scope="col">State</th>
+								<th scope="col">Country</th>
+								<th scope="col">Course</th>
+								<th scope="col">Class</th>
+								<th scope="col">Actions</th>
+							</tr>
+						</thead>
+						<tbody>
+							<c:forEach items="${students}" var="v" varStatus="c">
 								<tr>
-									<th scope="col">SN</th>
-									<th scope="col">Id</th>
-									<th scope="col">Name</th>
-									<th scope="col">email</th>
-									<th scope="col">Roll no</th>
-									<th scope="col">Course</th>
-									<th scope="col">Actions</th>
+									<th>${c.count}</th>
+									<td>${v.id}</td>
+									<td>${v.name}</td>
+									<td>${v.email}</td>
+									<td>${v.dob}</td>
+									<td>${v.gender}</td>
+									<td>${v.studentAddress.streetName}</td>
+									<td>${v.studentAddress.state}</td>
+									<td>${v.studentAddress.country}</td>
+									<td>${v.course.courseName}</td>
+									<td>${v.classes.className}</td>
+
+									<td><a href="student_edit?id=${v.id}">Edit</a> <a
+										href="student_delete?id=${v.id}">Delete</a></td>
 								</tr>
-							</thead>
-							<tbody>
-								<c:forEach items="${students}" var="v" varStatus="c">
-									<tr>
-										<th>${c.count}</th>
-										<td>${v.id}</td>
-										<td>${v.name}</td>
-										<td>${v.email}</td>
-										<td>${v.rollNo}</td>
-										<td>${v.course}</td>
-										<td><a href="vehicle_edit?id=${v.id}">Edit</a> <a
-											href="vehicle_delete?id=${v.id}">Delete</a></td>
-									</tr>
-								</c:forEach>
-						</table>
-					</c:if>
-				</div>
+							</c:forEach>
+					</table>
+				</c:if>
 			</div>
 		</div>
+	</div>
 	</div>
 	</section>
 
